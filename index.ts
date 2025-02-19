@@ -1,5 +1,7 @@
 import { Bot } from "grammy";
-
+import express from "express";
+const app = express();
+app.listen(3000, () => console.log("Http server is running"))
 // Create an instance of the `Bot` class and pass your bot token to it.
 const bot = new Bot("7557141644:AAFuZqhJnA6vEQJn7ke3LAa6EOb0H7_YScg"); // <-- put your bot token between the ""
 
